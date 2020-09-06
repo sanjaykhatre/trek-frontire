@@ -2,6 +2,75 @@
    margin: 0;
    padding:0; 
 }
+/* responsive css */
+@media only screen   and (min-device-width: 375px) 
+and (max-device-width: 812px)  {
+  .logo a img{
+    height: 100px;
+  }
+  .search-box button i {
+    padding: 20px;
+}
+  .search-box input {
+    margin-left: 34px;
+    margin-bottom: 10px;
+}
+.search-box:hover > input {
+  width: 256px;
+}
+/* banner */
+.banner-info-wrapper {
+  right: 45px;
+ 
+}
+.banner-info h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.banner-info P {
+  padding: 0px !important;
+  font-size: 14px;
+}
+/* custom select */
+.custom-select{
+ margin-left: 0px;
+}
+.arrow a{
+  margin-left: 20px !important;
+}
+.featured__text-left {
+  font-size: 20px !important;
+}
+.popular__text-left {
+
+  font-size: 20px !important;
+  
+}
+.popular-treks__arrow a {
+ 
+  margin-left: 20px !important;
+  
+}
+.travel-news {
+  display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logo a img{
   width: 100%;
 }
@@ -94,10 +163,11 @@
 .custom-select {
   position: relative;
   font-family: Arial;
- width: 350px !important;
+ width: 310px !important;
   background-color: white !important;
+  padding-right:300px ;
   color: black !important;
-  margin-left: 30px !important;
+  margin-left: 10px !important;
 }
 
 .custom-select select {
@@ -136,6 +206,7 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   padding: 1px ;
+  float: left;
  
 }
 
@@ -177,6 +248,7 @@
   background-image: url(../img/trek-option.jpg);
    color: #BF202F;
    display: inline;
+   padding: 35px;
 }
 .plans .customize-trip a{
   background-color: white ;
