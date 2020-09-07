@@ -2,7 +2,7 @@
    margin: 0;
    padding:0; 
 }
-/* responsive css */
+/* responsive css for iphone-x */
 @media only screen   and (min-device-width: 375px) 
 and (max-device-width: 812px)  {
   .logo a img{
@@ -56,6 +56,42 @@ and (max-device-width: 812px)  {
 }
 
 }
+/* /iphone x */
+
+
+/* responsive for ipad */
+@media only screen   and (min-device-width: 768px) 
+and (max-device-width: 1024px)  {
+  .banner-info-wrapper {
+    right: 335px;
+  }
+  .custom-select {
+
+    width: 90% !important;
+  }
+
+  .plans .request-trip a{
+
+    font-size: 14px;
+    padding: 21px;
+  }
+  .plans .customize-trip a{
+    font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -102,7 +138,56 @@ and (max-device-width: 812px)  {
 .search-box:hover > input{
   display: initial ;
 }
+/* navbar */
+.navbar-togglerr{
+  background-color: #BF202F;
+  padding: 10px;
 
+}
+.navbar-togglerr i{
+  color: #fff;
+  border: none;
+  
+
+}
+.navbar-togglerr:hover {
+  background-color: black;
+  
+
+}
+
+.naavbar{
+  background-color: #fff;
+}
+.nav-items{
+ 
+}
+.nav-items ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.nav-items ul li{
+list-style: none;
+}
+.nav-items ul li a{
+text-transform: uppercase;
+color: black;
+font-weight: 600;
+z-index: 1;
+}
+.nav-items ul li a:link{
+text-decoration: none;
+}
+.nav-items ul li a:hover{
+  color: #BF202F;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /* .banner-image */
 .banner-image{
@@ -163,11 +248,10 @@ and (max-device-width: 812px)  {
 .custom-select {
   position: relative;
   font-family: Arial;
- width: 310px !important;
+ width: 75% !important;
   background-color: white !important;
-  padding-right:300px ;
   color: black !important;
-  margin-left: 10px !important;
+  
 }
 
 .custom-select select {
@@ -213,11 +297,12 @@ and (max-device-width: 812px)  {
 /* Style items (options): */
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color:whitesmoke;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
+  display: grid ;
 }
 
 /* Hide the items when the select box is closed: */

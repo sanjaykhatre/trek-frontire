@@ -10,6 +10,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <title>Home</title>
@@ -19,16 +21,83 @@
   <div class=" top-header">
     <div class="container">
       <div class="row justify-content-between">
-      <div class="logo">
-        <a href="#">  <img class="img-fluid" src="./assets/img/logo.svg" alt=""></a>
+      <div class=" mt-4 p-2 logo">
+        <a href="#">  <img class="img-fluid" src="./assets/img-tf/log.svg" alt=""></a>
     </div>
-    <div class="mt-4 search-box ">
+    <div class="mt-4 p-2 search-box ">
       <input type="text" name="search" placeholder="Search..">
       <button> <i class="fas fa-search"></i></button>
   </div>
 </div>
     </div>
   </div>
+<!-- navbar -->
+<div class="naavbar" id="myHeader">
+  <hr>
+  <div class="container">
+    <button class="navbar-togglerr float-right d-md-none " type="button" >
+      <i class="fas fa-chevron-down" ></i>
+    </button>
+    <div class="nav-items" >
+      <ul>
+        <li><a href="#">treks</a></li>
+        <li><a href="#">tours</a></li>
+        <li><a href="#">mountains biking</a></li>
+        <li><a href="#">holiday style</a></li>
+        <li><a href="#">tailor made</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">latest in travel</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- <div class="naavbar">
+  <hr>
+  <div class=" container"> 
+    <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-light ">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="d-flex justify-content-between collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="d-flex justify-content-between navbar-nav mr-auto">
+          <li class="d-flex justify-content-between nav-item active">
+            <a class="d-flex justify-content-between nav-link " href="#">treks <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mountains biking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">holiday style</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">tailor made</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">latest in travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact us</a>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </nav>
+  </div>
+</div> -->
 
   <!-- banner-image -->
   <div class="banner-container">
@@ -140,7 +209,7 @@
 
 
     <div id="multi-item-example" class="carousel slide carousel-multi-item container " data-ride="carousel"
-      data-interval="3000">
+>
 
       <!--Controls-->
       <div class=" pt-5 pb-4 controls-top  ">
@@ -161,10 +230,10 @@
       <div class="carousel-inner crousal-wrapper" role="listbox">
 
         <!--First slide-->
-        <div class="carousel-item active">
+        <div class="carousel-item slider active">
 
           <div class="row">
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4  position-relative">
               <div class="mb-2">
                 <img class="card-img-top img-responsive" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -189,7 +258,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block position-relative">
+            <div class="hidden-xs col-md-4  clearfix d-none d-md-block position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -213,7 +282,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block position-relative">
+            <div class=" col-md-4 clearfix d-none d-md-block position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -246,7 +315,7 @@
         <div class="carousel-item">
 
           <div class="row">
-            <div class="col-md-4 position-relative">
+            <div class=" col-md-4 position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -327,8 +396,8 @@
         <!--Third slide-->
         <div class="carousel-item">
 
-          <div class="row">
-            <div class="col-md-4 position-relative">
+          <div class="row ">
+            <div class=" col-md-4 position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -352,7 +421,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block position-relative">
+            <div class=" col-md-4 clearfix d-none d-md-block position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -376,7 +445,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 clearfix d-none d-md-block position-relative">
+            <div class=" col-md-4 clearfix d-none d-md-block position-relative">
               <div class="mb-2">
                 <img class="card-img-top" src="./assets/img/heli.jpg" alt="Card image cap">
                 <div class="featured-trips-info">
@@ -854,6 +923,20 @@
 
 
   <script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
     var x, i, j, l, ll, selElmnt, a, b, c;
     /* Look for any elements with the class "custom-select": */
     x = document.getElementsByClassName("custom-select");
@@ -934,6 +1017,45 @@
     /* If the user clicks anywhere outside the select box,
     then close all select boxes: */
     document.addEventListener("click", closeAllSelect);
+
+
+
+    // slick slider
+    $('.slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
   </script>
 
 
@@ -944,6 +1066,7 @@
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
