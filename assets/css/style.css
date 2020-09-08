@@ -54,6 +54,53 @@ and (max-device-width: 812px)  {
 .travel-news {
   display: none;
 }
+/* navbar */
+
+.m-navbar-togglerr{
+  background-color: #BF202F;
+  padding: 10px;
+  position: absolute;
+  top: 170px;
+  right: 37px;
+  z-index: 999;
+}
+.m-navbar-togglerr span{
+  color: white;
+  padding: 0px;
+  display: grid;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.m-nav-items{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  height: 100vh;
+  margin-top: 29px;
+  background: black;
+  
+}
+.m-nav-items ul li{
+  list-style: none;
+  padding: 20px;
+}
+.m-nav-items ul li a{
+  margin: 13px;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m-nav-items ul li a:link{
+ text-decoration: none;
+}
+
+.m-nav-items.active{
+  display: block ;
+}
 
 }
 /* /iphone x */
@@ -79,19 +126,64 @@ and (max-device-width: 1024px)  {
     font-size: 14px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.m-navbar-togglerr{
+  background-color: #BF202F;
+  padding: 10px;
+  position: absolute;
+  top: 193px;
+  right: 37px;
+  z-index: 999;
 }
+.m-navbar-togglerr span{
+  color: white;
+  padding: 0px;
+  display: grid;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.m-nav-items{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  height: 100vh;
+  margin-top: 29px;
+  background: black;
+  
+}
+.m-nav-items ul li{
+  list-style: none;
+  padding: 20px;
+}
+.m-nav-items ul li a{
+  margin: 13px;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m-nav-items ul li a:link{
+ text-decoration: none;
+}
+
+.m-nav-items.active{
+  display: block ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,7 +238,7 @@ and (max-device-width: 1024px)  {
 }
 .navbar-togglerr i{
   color: #fff;
-  border: none;
+ 
   
 
 }
@@ -158,10 +250,9 @@ and (max-device-width: 1024px)  {
 
 .naavbar{
   background-color: #fff;
+  z-index: 1000;
 }
-.nav-items{
- 
-}
+
 .nav-items ul{
   display: flex;
   justify-content: space-between;

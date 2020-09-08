@@ -10,6 +10,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -32,12 +33,9 @@
     </div>
   </div>
 <!-- navbar -->
-<div class="naavbar" id="myHeader">
+<div class="naavbar d-none d-lg-block" id="myHeader">
   <hr>
   <div class="container">
-    <button class="navbar-togglerr float-right d-md-none " type="button" >
-      <i class="fas fa-chevron-down" ></i>
-    </button>
     <div class="nav-items" >
       <ul>
         <li><a href="#">treks</a></li>
@@ -50,54 +48,30 @@
         <li><a href="#">contact us</a></li>
       </ul>
     </div>
+  </div>
 
+</div>
+<!-- navbar for mobile -->
+<div class="m-naavbar d-lg-none" id="myHeader">
+    <div class="m-nav-items position-relative" >
+      <ul>
+        <li><a href="#">treks</a></li>
+        <li><a href="#">tours</a></li>
+        <li><a href="#">mountains biking</a></li>
+        <li><a href="#">holiday style</a></li>
+        <li><a href="#">tailor made</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">latest in travel</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </div> 
+      <button class="m-navbar-togglerr"><span>menu</span><i class="fas fa-chevron-down" style="color: white; padding: 5px;" ></i></button>
   </div>
 
 </div>
 
 
-<!-- <div class="naavbar">
-  <hr>
-  <div class=" container"> 
-    <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-light ">
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="d-flex justify-content-between collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="d-flex justify-content-between navbar-nav mr-auto">
-          <li class="d-flex justify-content-between nav-item active">
-            <a class="d-flex justify-content-between nav-link " href="#">treks <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">tours</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">mountains biking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">holiday style</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">tailor made</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">about us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">latest in travel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact us</a>
-          </li>
-          
-        </ul>
-       
-      </div>
-    </nav>
-  </div>
-</div> -->
+
 
   <!-- banner-image -->
   <div class="banner-container">
@@ -922,141 +896,7 @@
 
 
 
-  <script>
-
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-    var x, i, j, l, ll, selElmnt, a, b, c;
-    /* Look for any elements with the class "custom-select": */
-    x = document.getElementsByClassName("custom-select");
-    l = x.length;
-    for (i = 0; i < l; i++) {
-      selElmnt = x[i].getElementsByTagName("select")[0];
-      ll = selElmnt.length;
-      /* For each element, create a new DIV that will act as the selected item: */
-      a = document.createElement("DIV");
-      a.setAttribute("class", "select-selected");
-      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-      x[i].appendChild(a);
-      /* For each element, create a new DIV that will contain the option list: */
-      b = document.createElement("DIV");
-      b.setAttribute("class", "select-items select-hide");
-      for (j = 1; j < ll; j++) {
-        /* For each option in the original select element,
-        create a new DIV that will act as an option item: */
-        c = document.createElement("DIV");
-        c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function (e) {
-          /* When an item is clicked, update the original select box,
-          and the selected item: */
-          var y, i, k, s, h, sl, yl;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          sl = s.length;
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < sl; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              yl = y.length;
-              for (k = 0; k < yl; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
-            }
-          }
-          h.click();
-        });
-        b.appendChild(c);
-      }
-      x[i].appendChild(b);
-      a.addEventListener("click", function (e) {
-        /* When the select box is clicked, close any other select boxes,
-        and open/close the current select box: */
-        e.stopPropagation();
-        closeAllSelect(this);
-        this.nextSibling.classList.toggle("select-hide");
-        this.classList.toggle("select-arrow-active");
-      });
-    }
-
-    function closeAllSelect(elmnt) {
-      /* A function that will close all select boxes in the document,
-      except the current select box: */
-      var x, y, i, xl, yl, arrNo = [];
-      x = document.getElementsByClassName("select-items");
-      y = document.getElementsByClassName("select-selected");
-      xl = x.length;
-      yl = y.length;
-      for (i = 0; i < yl; i++) {
-        if (elmnt == y[i]) {
-          arrNo.push(i)
-        } else {
-          y[i].classList.remove("select-arrow-active");
-        }
-      }
-      for (i = 0; i < xl; i++) {
-        if (arrNo.indexOf(i)) {
-          x[i].classList.add("select-hide");
-        }
-      }
-    }
-
-    /* If the user clicks anywhere outside the select box,
-    then close all select boxes: */
-    document.addEventListener("click", closeAllSelect);
-
-
-
-    // slick slider
-    $('.slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-  </script>
+ 
 
 
 
@@ -1066,16 +906,15 @@ function myFunction() {
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
