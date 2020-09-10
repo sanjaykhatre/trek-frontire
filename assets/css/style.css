@@ -809,3 +809,201 @@ color: black;
   text-transform: capitalize;
   padding: 5px;
 }
+
+/************************************ details page***********************************************/
+
+.trek-info-title{
+  background-color: white;
+}
+.info-titles{
+  
+}
+.info-titles a:link{
+  text-decoration: none;
+
+}
+.info-titles a{
+  text-transform: capitalize;
+  padding: 5px;
+  color: gray;
+  border-bottom: 1px solid gray;
+  margin-right: 8px;
+}
+.info-titles{
+
+}
+/* trip-specifications  */
+.trip-specification-wrapper{
+  background-color: #30362f;
+  position: relative;
+  height: 590px;
+}
+.trip-specifications{
+  height: auto;
+}
+.trip-specifications ul{
+  padding-top: 20px;
+
+}
+.trip-specifications ul li{
+list-style: none;
+color: white;
+display: flex;
+padding: 15px;
+
+}
+.trip-specifications ul li img{
+  width: auto;
+  height: 50px;
+
+}
+.trip-specifications ul li span h4{
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+.trip-specifications ul li span p{
+font-size: 14px;
+padding-left: 20px;
+
+}
+/* card */
+.trip-card {
+  position: absolute;
+  top: -197px;
+  right: 105px;
+}
+.trip-card-info{
+  background-image: url(../img-tf/images/line-bgd.png);
+  background-color: white;
+  padding: 20px;
+}
+.trip-card-info .trip-price-prev p{
+  font-size: 18px;
+  text-decoration: line-through; 
+ text-decoration-color: #118b8d;
+  color: #118b8d;
+
+}
+.trip-card-info .trip-price-prev p span{
+  font-size: 30px;
+ 
+
+}
+.trip-price-now p{
+  font-size: 22px;
+  text-decoration: line-through; 
+  text-decoration-color: #118b8d;
+  color: #118b8d;
+}
+.trip-price-now p span{
+  font-size: 35px;
+ 
+}
+.trip-book-btn button:hover{
+background-color: #BF202F;
+}
+.trip-book-btn button{
+  background-color: #118b8d;
+  border: none;
+  padding: 10px 15px 0px 15px;
+  font-size: 16px;
+  font-weight: 700;
+ 
+}
+.trip-book-btn button p{
+  color: white;
+text-transform: uppercase;
+
+}
+.trip-book-btn span{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  
+
+}
+.trip-card-details {
+  background-color: #ffffff;
+}
+.trip-social-icon{
+  display: flex;
+  padding: 10px;
+  
+}
+.trip-social-icon p{
+  padding: 10px;
+  text-transform: capitalize;
+}
+.trip-social-icon ul {
+margin: 0px;
+display: flex;
+  
+}
+.trip-social-icon ul li{
+ list-style: none;
+ padding: 10px;
+}
+.trip-social-icon ul li a{
+  color: #118b8d;
+  padding: 5px;
+  
+}
+.trip-social-icon ul li a:hover{
+  color: #BF202F;
+  
+
+}
+
+.trip-booking-info h4{
+  color: #003a17;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+.trip-booking-info a{
+  text-decoration: none;
+  color: black;
+  text-decoration-line: underline;
+  text-decoration-color: #003a17;
+  
+}
+.trip-booking-info p{
+  padding: 20px;
+  font-size: 16px;
+  
+  
+}
+.trip-booking-info p span{
+  font-size: 30px;
+  font-weight: 800;
+}
+/* mid header */
+.mid-header{
+  background-color: #118b8d;
+  position: relative;
+  
+}
+.mid-header-content ul{
+  display: flex;
+  justify-content: space-between;
+}
+.mid-header-content ul li{
+  list-style: none;
+  padding: 20px;
+}
+.mid-header-content ul li a:hover{
+ background-color: #fff;
+ padding: 20px;
+ color: #BF202F;
+  
+}
+.mid-header-content ul li a:link{
+  text-decoration: none;
+}
+.mid-header-content ul li a{
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
