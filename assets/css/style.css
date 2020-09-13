@@ -4,7 +4,7 @@
 }
 /* responsive css for iphone-x */
 @media only screen   and (min-device-width: 375px) 
-and (max-device-width: 812px)  {
+and (max-device-width: 767px)  {
   .logo a img{
     height: 100px;
   }
@@ -101,7 +101,14 @@ and (max-device-width: 812px)  {
 .m-nav-items.active{
   display: block ;
 }
+/* detaols page responsive */
+.trip-specification-wrapper{
+  padding-bottom: 20px;
+}
+.trip-card{
 
+ position: unset !important;
+}
 }
 /* /iphone x */
 
@@ -169,6 +176,11 @@ and (max-device-width: 1024px)  {
 
 .m-nav-items.active{
   display: block ;
+}
+/* details-page */
+.trip-social-icon ul li {
+  
+  padding: 0 !important;
 }
 }
 
@@ -835,8 +847,8 @@ color: black;
 /* trip-specifications  */
 .trip-specification-wrapper{
   background-color: #30362f;
-  position: relative;
-  height: 590px;
+
+ 
 }
 .trip-specifications{
   height: auto;
@@ -872,8 +884,8 @@ padding-left: 20px;
 /* card */
 .trip-card {
   position: absolute;
-  top: -197px;
-  right: 105px;
+  top: -198px;
+ 
 }
 .trip-card-info{
   background-image: url(../img-tf/images/line-bgd.png);
@@ -1156,9 +1168,13 @@ position: relative;
   text-transform: capitalize;
   color: gray;
 }
+.row-wrapper{
+  padding-bottom: 150px;
+}
 /* footer spacilist crousel */
 .footer{
   background-image: url(../img-tf/images/footer-background.jpg);
+  background-size: cover;
 }
 .specialist-crousel-controller h4{
   text-transform: uppercase;
@@ -1184,3 +1200,4 @@ position: relative;
   color:#BF202F ;
 
 }
+
