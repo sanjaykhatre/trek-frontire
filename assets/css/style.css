@@ -1007,3 +1007,180 @@ display: flex;
   text-transform: uppercase;
   padding: 20px;
 }
+/* circuit-trek */
+.circuit-trek{
+  background-color: white;
+  padding: 10px;
+}
+.circuit-trek-info h2{
+text-transform: capitalize;
+font-weight: 600;
+
+}
+.circuit-trek-info p span{
+  font-weight: 400;
+ font-size: 30px;
+}
+.trek-highlight{
+  border: 1px solid #118b8d;
+  padding:15px  50px;
+}
+.trek-highlight h4{
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+.trek-highlight ul li {
+margin-left: 10px;
+padding: 5px;
+}
+
+.ct-card{
+ 
+  margin: 0px;
+  padding: 0px;
+}
+.ct-discount-card {
+  border: 1px solid #118b8d;
+}
+
+.ct-discount-card h4{
+  text-align: center;
+  padding-top: 20px;
+  color: #118b8d;
+  font-size: 18px;
+  font-weight: bold;
+}
+.ct-discount-card h4 span{
+  color: #118b8d;
+  font-weight: bold;
+  font-size: 30px;
+}
+.ct-discount-card >p{
+  text-align: center;
+  color: #003a17;
+  font-weight: 500;
+  font-size: 18px;
+}
+.ct-discount-card >p a {
+  text-align: center;
+color: black;
+border-bottom: 1px solid #003a17;
+font-size: 15px;
+font-weight: 400;
+}
+.ct-discount-card >p a:link{
+  text-decoration: none;
+
+}
+.ct-discount-card >p a:hover{
+  color: #BF202F;
+}
+
+.ct-banner-img{
+position: relative;
+}
+.ct-banner-img img{
+ 
+}
+.ct-banner-text{
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+  color: white;
+  font-weight: 400;
+}
+.ct-banner-text p{
+  color: white;
+ 
+  
+}
+.ct-banner-text p a{
+  color: white;
+  font-weight: 700;
+
+}
+.ct-banner-text p a:hover{
+  color:#BF202F;
+}
+.ct-buttons{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.ct-buttons a:link{
+  text-decoration: none;
+ 
+}
+.ct-buttons .ct-book-btn{
+  background-color: #118b8d;
+  padding: 10px;
+  
+}
+.ct-buttons .ct-book-btn:hover{
+  background-color: #BF202F;
+  
+}
+.ct-buttons .ct-book-btn a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+}
+.ct-buttons .ct-customize-btn{
+  background-color: black;
+  padding: 10px;
+  
+}
+.ct-buttons .ct-customize-btn:hover{
+  background-color: #BF202F;
+  
+}
+.ct-buttons .ct-customize-btn a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+}
+.dowload-trip-pdf{
+  border: 1px solid #118b8d;
+  padding: 15px;
+}
+.dowload-trip-pdf a:link{
+  text-decoration: none;
+}
+.dowload-trip-pdf a{
+  text-transform: capitalize;
+  color: gray;
+}
+/* footer spacilist crousel */
+.footer{
+  background-image: url(../img-tf/images/footer-background.jpg);
+}
+.specialist-crousel-controller h4{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  color: #BF202F;
+  
+}
+.specialist-crousel-controller a{
+  padding: 0px 10px;
+}
+.specialist-card-body{
+  position: absolute;
+  z-index: 999;
+  width: 312px;
+  bottom: -153px;
+  right: 15px;
+  background-color: white;
+  padding: 20px 10px 0px 21px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.specialist-card-body h4{
+  color:#BF202F ;
+
+}
