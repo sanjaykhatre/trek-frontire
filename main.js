@@ -142,4 +142,10 @@ $(document).ready(function(){
   })
 })
 
+$(document).ready(function(){
+  $('.overview').on('click',function(){
+    $('.circuit-trek-info').toggleClass('active')
+    console.log('abbb');
+  })
+})
 

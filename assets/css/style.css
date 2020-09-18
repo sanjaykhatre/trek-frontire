@@ -744,6 +744,7 @@ color: black;
 }
 .contact-info h4{
  text-transform: uppercase;
+ color: #BF202F;
 }
 .contact-info ul li{
  list-style: none;
@@ -760,6 +761,7 @@ color: black;
 }
 .nepal-info h4{
  text-transform: uppercase;
+ color: #BF202F;
 }
 .nepal-info ul li{
  list-style: none;
@@ -776,6 +778,7 @@ color: black;
 }
 .quick-links h4{
  text-transform: uppercase;
+ color: #BF202F;
 }
 .quick-links ul li{
  list-style: none;
@@ -792,6 +795,7 @@ color: black;
 }
 .contact-with-us h4{
  text-transform: uppercase;
+ color: #BF202F;
 }
 .contact-with-us ul{
   display: flex;
@@ -807,6 +811,9 @@ color: black;
  color:#413f3f;
  font-size: 50px;
  
+}
+.b-footer-title h4{
+  color: #BF202F;
 }
 .contact-with-us ul li a:link{
  text-decoration: none;
@@ -881,6 +888,7 @@ font-size: 14px;
 padding-left: 20px;
 
 }
+
 /* card */
 .trip-card {
   position: absolute;
@@ -1199,5 +1207,17 @@ position: relative;
 .specialist-card-body h4{
   color:#BF202F ;
 
+}
+
+/* home */
+.circuit-trek-info{
+  display: none;
+}
+#home{
+  
+ 
+}
+.circuit-trek-info.active{
+  display: block;
 }
 

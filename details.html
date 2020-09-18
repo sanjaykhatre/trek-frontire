@@ -18,6 +18,7 @@
   <title>Home</title>
 </head>
 <body>
+  
     <div class=" top-header">
         <div class="container">
           <div class="row justify-content-between">
@@ -37,8 +38,8 @@
       <div class="container">
         <div class="nav-items" >
           <ul>
-            <li><a href="#">treks</a></li>
-            <li><a href="#">tours</a></li>
+            <li><a href="/details.html">treks</a></li>
+            <li><a href="/tours.html">tours</a></li>
             <li><a href="#">mountains biking</a></li>
             <li><a href="#">holiday style</a></li>
             <li><a href="#">tailor made</a></li>
@@ -69,6 +70,7 @@
     
     </div>
     
+    <!--  -->
     
     
     
@@ -168,17 +170,18 @@
       <!-- mid-header -->
       <div class=" mid-header">
         <div class='container'>
-          
           <div class="mid-header-content">
-          <ul>
-            <li><a href="#">overview</a></li>
-            <li><a href="#">itinerary</a></li>
-            <li><a href="#">equipment list</a></li>
-            <li><a href="#">dates</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">faq's</a></li>
-            <li><a href="#">reviews</a></li>
+          <ul class="nav">
+            <li class="overview active"><a data-toggle="tab" href="#home">overview</a></li>
+            <li><a data-toggle="tab" href="#menu1">itinerary</a></li>
+            <li><a data-toggle="tab" href="#menu2">equipment list</a></li>
+            <li><a data-toggle="tab" href="#menu3">dates</a></li>
+            <li><a data-toggle="tab" href="#menu4">services</a></li>
+            <li><a data-toggle="tab" href="#menu5">faq's</a></li>
+            <li><a data-toggle="tab" href="#menu6">reviews</a></li>
           </ul>
+        
+         
         </div>
         </div>
       </div>
@@ -187,27 +190,33 @@
       <div class="circuit-trek">
         <div class="container">
           <div class="row">
-          <div class="col-md-8 ">
-            <div class="circuit-trek-info">
-              <h2>14-days annapurna circuit trek</h2>
-              <p> <span>A</span>nnapurna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum corrupti dolor excepturi, provident illo quaerat porro odit labore, omnis corporis deleniti id ducimus error veniam. Excepturi veritatis eius blanditiis Lorem ipsum dolor sit amet consectetur adipisicing 
-                 elit. Aliquid temporibus quisquam laboriosam blanditiis qui consequatur unde dignissimos quos at fugiat nihil magni facere ad rerum, ratione repellendus debitis nisi quaerat expedita aut sunt soluta recusandae maxime? Ullam ut eum vel deserunt quaerat, ex totam sequi sit maxime quo id veniam?
-                 elit. Aliquid temporibus quisquam laboriosam blanditiis qui consequatur unde dignissimos quos at fugiat nihil magni facere ad r
-                </p>
-            </div>
-            <div class="trek-highlight">
-              <h4>annapurna circuit trel heighlight</h4>
-              <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              </ul>
-            </div>
+            <div class="col-md-8 ">
+                <div class="tab-content">
+              <div id="home" class="tab-pane active  circuit-trek-info">
+                  <h2>14-days annapurna circuit trek</h2>
+                  <p> <span>A</span>nnapurna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum corrupti dolor excepturi, provident illo quaerat porro odit labore, omnis corporis deleniti id ducimus error veniam. Excepturi veritatis eius blanditiis Lorem ipsum dolor sit amet consectetur adipisicing 
+                     elit. Aliquid temporibus quisquam laboriosam blanditiis qui consequatur unde dignissimos quos at fugiat nihil magni facere ad rerum, ratione repellendus debitis nisi quaerat expedita aut sunt soluta recusandae maxime? Ullam ut eum vel deserunt quaerat, ex totam sequi sit maxime quo id veniam?
+                     elit. Aliquid temporibus quisquam laboriosam blanditiis qui consequatur unde dignissimos quos at fugiat nihil magni facere ad r
+                    </p>
+                    
+              
+              </div>
+              <div id="menu1" class="tab-pane fade">
+                <h3>Menu 1</h3>
+                <p>Some content in menu 1.</p>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <h3>Menu 2</h3>
+                <p>Some content in menu 2.</p>
+              </div>
+           
+            </div>    
+         
           </div>
           <div class=" col-md-4 ct-card">
-            <div class="ct-discount-card">
+           
+              <div  class=" circuit-trek-info">
+            <div  class="ct-discount-card">
               <h4>Now from U$$ <span>1,470</span>pp</h4>
               <p>we offer discount for group bookings <br>
                 <a class="" href="#">click here to learn how discount works</a>
@@ -220,11 +229,7 @@
                     <br>
                     <a href="#">learn more on how you can help</a>
                   </p>
-                
-
                 </div>
-
-
               </div>
               <div class="my-4 text-center ct-buttons">
                 <div class="ct-book-btn">
@@ -242,8 +247,11 @@
 
           </div>
         </div>
-      </div>
+          </div>
+          </div>
+          <!--  -->
     </div>
+   
 
 
     <!-- ==   ---  top-footer== talk to an specialist-crousle -->
