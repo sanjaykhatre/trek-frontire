@@ -144,8 +144,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.overview').on('click',function(){
-    $('.circuit-trek-info').toggleClass('active')
+    $('.overview-wrapper').show();
+    $('.itinerary-wrapper').hide();
     console.log('abbb');
   })
+  $('.itinerary').on('click',function(){
+    $('.overview-wrapper').hide();
+    $('.itinerary-wrapper').show();
+
+    console.log('a');
+  })
+
 })
 

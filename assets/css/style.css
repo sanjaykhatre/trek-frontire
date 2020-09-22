@@ -1210,14 +1210,4 @@ position: relative;
 }
 
 /* home */
-.circuit-trek-info{
-  display: none;
-}
-#home{
-  
- 
-}
-.circuit-trek-info.active{
-  display: block;
-}
 
