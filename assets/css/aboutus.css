@@ -1,0 +1,16 @@
+.aboutus{
+    padding-top: 20px;
+}
+.aboutus h2{
+    color: #BF202F;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.aboutus h3{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 640;
+}
+.objectives ul li{
+    list-style-position: inside;
+}
