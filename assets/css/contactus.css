@@ -1,0 +1,37 @@
+.contactus-info p{
+
+}
+.contactus-info h4{
+ text-transform: uppercase;
+ color: #BF202F;
+}
+.contactus-info ul li{
+ list-style: none;
+ padding: 3px;
+ margin: 0PX;
+ 
+}
+.contactus-info ul li a{
+ list-style: none;
+ color:#413f3f;
+}
+.contactus-info ul li a:link{
+ text-decoration: none;
+}
+   .contactus-social-icon ul{
+     display: flex;
+     flex-wrap: wrap;
+
+   }
+   .contactus-social-icon ul li{
+    list-style: none;
+    padding: 3px;
+    margin: 0PX;
+   }
+   .contactus-social-icon ul li a{
+    list-style: none;
+    font-size: 40px;
+    padding-right: 10px;
+    
+   }
+   .contactus-
