@@ -1,0 +1,141 @@
+ul{
+    list-style: none;
+}
+.booking{
+    background-color: #cccccc;
+    padding: 25px;
+}
+.booking h2{
+    text-align: center ;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.booking-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+.booking-bar{
+    padding: 0px 100px;
+}
+.booking-bar ul li{
+    position: relative;
+    width: 0px;
+    text-transform: capitalize;
+    padding: 5px;
+}
+.booking-bar ul li i::after {
+  content: '';
+  background-color: white;
+  height: 3px;
+  width: 280px;
+    position: absolute;
+    top: 40px;
+  
+}
+.booking-bar ul li i{
+    color: white;
+    font-size: 25px;
+}
+.booking-bar ul li:nth-child(1) .fa{
+    color: gold;
+}
+.booking-bar ul li:nth-child(4) i::after {
+    display: none;
+}
+.booking-bar ul li p{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+   width: max-content;
+   padding: 5px;
+    
+}
+.booking-bar ul li:nth-child(1) p{
+
+}
+.traveller-specification input{
+    border: none;
+    box-shadow: 1px 2px 5px 0px grey;
+    padding: 5px;
+    margin-bottom: 15px;
+   
+  
+}
+.traveller-specification select{
+    border: none;
+    box-shadow: 1px 2px 5px 0px grey;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.traveller-specification h3{
+ color: #00a651;
+ text-transform: capitalize;
+ margin-bottom: 20px;
+ margin-top: 20px;
+}
+.traveller-specification label{
+    padding-top:10px ;
+    text-transform: capitalize;
+}
+.line-break i::after {
+    content: '';
+    width: 621px;
+    right: 13px;
+    top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: gray;
+    z-index: -99;
+    overflow: hidden;
+}
+
+.line-break i{
+    z-index: 1;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 50%;
+    
+}
+.insurance-options ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.insurance-options ul li{
+    padding-right: 30px;
+}
+.booking-total{
+    padding: 20px;
+}
+.booking-total h4{
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+.booking-total h4 span{
+    color: #00a651;
+    text-transform: lowercase;
+}
+.booking-total  p{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.booking-total ul li span{
+float: right;
+}
+.booking-total ul li{
+    list-style: none;
+    padding: 10px;
+    color:  #BF202F;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}

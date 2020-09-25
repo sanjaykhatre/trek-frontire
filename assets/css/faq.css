@@ -1,0 +1,46 @@
+a:link{
+text-decoration: none !important;
+}
+.card{
+    background: white;
+}
+.faq-card-header {
+    background: white !important;
+    
+}
+.faq-card-header i {
+   float: right;
+   color: gray;
+    font-size: 14px;
+    position: relative;
+    padding-right: 20px;
+}
+.faq-qsn{
+   
+}
+.faq-qsn p{
+cursor: pointer;
+font-size: 20px;
+padding-left: 20px;
+padding-top: 20px;
+font-weight: 600;
+
+}
+.faq-qsn p span{
+color: #BF202F;
+font-size: 22px;
+font-weight: bold;
+padding: 5px;
+}
+
+
+.faq-card-body{
+
+}
+.faq-card-body p span{
+    color: green;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px;
+
+}

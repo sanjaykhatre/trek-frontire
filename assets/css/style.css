@@ -308,8 +308,7 @@ text-decoration: none;
     position: absolute;
     top: 160px;
     left: 70px;
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgba(0,0,0,0.4);
     width: auto;
 }
 .banner-info{
@@ -324,9 +323,14 @@ text-decoration: none;
  padding: 10PX;
 }
 .banner-info span{
-  background-color:#eb0f25;
+  background-color:#BF202F;
   padding: 10px;
   color: white;
+  text-transform: uppercase;
+}
+.banner-info span:hover{
+padding: 12px;
+
 }
 .banner-info span a:link{
   text-decoration: none;
@@ -446,6 +450,10 @@ text-decoration: none;
   
   
 }
+.plans .customize-trip a:hover{
+  color: black !important;
+  padding: 22px 37px;
+}
 .plans a:link{
   text-decoration: none;
 
@@ -458,6 +466,12 @@ color: white;
   color: white;
   padding: 20px;
   text-transform: uppercase;
+
+}
+.plans .request-trip a:hover{
+ color: black;
+  padding: 22px;
+  
 
 }
 /* feature trips */
