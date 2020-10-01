@@ -368,6 +368,7 @@ padding: 12px;
 
 .select-selected {
   color: black !important;
+
  
 }
 
@@ -421,6 +422,16 @@ padding: 12px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.select-items div, .select-selected {
+  font-weight: 700 !important;
+  color: #BF202F !important;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  padding: 1px;
+  float: left;
+  border: none;
+}
 .search-trip-btn{
 
   color: #fff;
@@ -577,6 +588,10 @@ padding: 7px;
 margin-left: 10px;
 color: white;
 }
+.month-lists span:hover{
+padding: 8px;
+color: black;
+}
 .inqurie-btn a:link{
   text-decoration: none;
   
@@ -638,8 +653,9 @@ background-color:#FFFFFF;
 .highlight-info ul li{
   list-style: none;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 18px;
   padding: 10px;
+  flex: 50%;
 
 
 }
@@ -652,6 +668,14 @@ background-color:#FFFFFF;
   flex-direction: row;
   justify-content: space-between;
 
+}
+.disabled  {
+  pointer-events: none !important;
+  opacity:0.6;      
+}
+.disabled a:link {
+  pointer-events: none !important;
+  text-decoration: none; 
 }
 .popular-trek-month ul li{
 list-style: none;
@@ -680,8 +704,9 @@ color: black;
 }
 .popular-trek-btn span a{
   color: #fff;
-  
-
+}
+.popular-trek-btn span a:hover{
+  color: black;
 }
 .popular-trek-btn .book-btn{
   padding: 10px 30px 10px 30px;
@@ -746,9 +771,13 @@ color: black;
  padding: 20px;
 
 }
-.contactus-icon i{
+.contactus-icon a i{
   padding: 20px;
   font-size: 80px;
+}
+.contactus-icon a i:hover{
+  padding: 22px;
+ 
 }
 .contact-info{
   
